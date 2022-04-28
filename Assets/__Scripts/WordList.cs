@@ -112,12 +112,12 @@ public class WordList : MonoBehaviour
         return S.numToParseBeforeYield;
     }
 
-    static public int WORD_LENGHT_MIN()
+    static public int WORD_LENGTH_MIN()
     {
         return S.wordLengthMin;
     }
 
-    static public int WORD_LENGHT_MAX()
+    static public int WORD_LENGTH_MAX()
     {
         return S.wordLengthMax;
     }

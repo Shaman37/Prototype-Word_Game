@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,9 @@ public class WordLevel
     public string                word;
     public Dictionary<char, int> charDict;
     public List<string>          subWords;
+    
+    private System.Random rnd = new System.Random();
+
 
 
     static public Dictionary<char,int> MakeCharDict(string w)
@@ -65,4 +69,44 @@ public class WordLevel
         }
         return true;
     }
+
+    public List<string> GetWordsByLength(int lDesired)
+    {
+        List<string> words = subWords;
+        words = words.FindAll(x => x.Length == lDesired);
+
+        return words;
+    }
+
+    public static IEnumerable<string> SortWordsByLength(IEnumerable<string> ws) {
+        ws = ws.OrderBy(s => s.Length);
+        return ws;
+    }
+
+    public void SelectWords()
+    {
+        List<string> words = new List<string>();
+        List<string> newWordList = new List<string>();
+        int nWords = 12;
+        int maxLetters = WordList.WORD_LENGTH_MAX();
+        
+        for (int i = 3; i < maxLetters; i++)
+        {   
+            words = GetWordsByLength(i).OrderBy(x => rnd.Next()).ToList();
+
+            newWordList.AddRange(words.Take(nWords).ToList());
+            nWords = nWords - i > 2 ? nWords - i : 2;
+        }
+
+        newWordList.Add(word);
+
+        // Order alphabetically
+        newWordList.Sort();
+
+        // Order by Length
+        newWordList = SortWordsByLength(newWordList).ToList();
+        
+        subWords = newWordList;
+    }
+
 }
