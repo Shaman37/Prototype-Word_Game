@@ -91,6 +91,12 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "project.setup.tools": {
+      "version": "file:C:/Users/37joa/Desktop/Unity/Unity Packages/Project Setup Tools",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
