@@ -5,6 +5,8 @@ It is a card game prototype, similar to the commercial games [Word Whomp](https:
 [Jumbline 2](https://play.google.com/store/apps/details?id=com.brainium.jumbline2free&hl=pt_PT&gl=US), 
 [Pressed for Words](https://play.google.com/store/apps/details?id=net.aharm.pressed&hl=pt_PT&gl=US) and so on.
 
+You can play it [here!](https://shaman37.itch.io/prototype-word-game)
+
 ## How to play
 <p align="center"> 
   <img src="https://user-images.githubusercontent.com/17680666/165864037-9e7a48ab-acc3-45da-a8ad-a3c5d6e5798c.png"/>
