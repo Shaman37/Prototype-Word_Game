@@ -27,10 +27,10 @@ Also, if the word submited as a guess contains any other smaller words, the play
 
 Example:
 
-TORNADO -> 7 * 1 (1 point per letter * 1, for being the first word) = 7 points
-TORN -> 4 * 2 (1 point per letter * 2, for being the second word) = 8 points
-TOR -> 3 * 3 (1 point per letter * 3, for being the third word) = 9 points
-ADO -> 3 * 4 (1 point per letter * 4, for being the fourth word) = 12 points
+- TORNADO -> 7 * 1 (1 point per letter * 1, for being the first word) = 7 points
+- TORN -> 4 * 2 (1 point per letter * 2, for being the second word) = 8 points
+- TOR -> 3 * 3 (1 point per letter * 3, for being the third word) = 9 points
+- ADO -> 3 * 4 (1 point per letter * 4, for being the fourth word) = 12 points
 
 For a total of 36 points!
 
